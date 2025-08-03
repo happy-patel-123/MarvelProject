@@ -1,7 +1,7 @@
-import Demo from './src/Demo';
+import Navigation from './src/navigation/Navigation';
 
 function App() {
-  return <Demo />
+  return <Navigation />
 }
 
 export default App;

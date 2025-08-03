@@ -1,0 +1,1 @@
+export const babyWhite = '#F5F5F5';
