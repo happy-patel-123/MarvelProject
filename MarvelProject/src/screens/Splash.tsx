@@ -1,5 +1,7 @@
 import { Image, StyleSheet, Text, View } from 'react-native'
 import React, { useEffect } from 'react'
+import * as Colors from "../resources/values/Colors"
+import { localAssets } from '../resources/assets/Assets'
 
 const Splash = ({ navigation }) => {
 
@@ -11,7 +13,7 @@ const Splash = ({ navigation }) => {
 
   return (
     <View style={styles.container}>
-      <Image source={require("../resources/assets/images/splash.png")} />
+      <Image source={localAssets.splashImage} />
     </View>
   )
 }
@@ -23,6 +25,6 @@ const styles = StyleSheet.create({
     flex: 1, 
     justifyContent: 'center',
     alignItems: 'center', 
-    backgroundColor: '#E62429'
+    backgroundColor: Colors.primaryRed
   }
 })
