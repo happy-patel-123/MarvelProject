@@ -4,15 +4,35 @@ import {
   TextInput,
   View,
   TouchableOpacity,
+  Alert,
 } from 'react-native'
 import React, { useState } from 'react'
 import * as Colors from '../resources/values/Colors'
 import { Responsive } from '../utils/ResponsivePixels'
 import Strings from '../language/Strings'
+import { isEmpty, isNotValidEmail } from '../utils/Utils'
+import { storage } from './SignUp'
 
 const Login = ({ navigation }) => {
-  const [username, setUserName] = useState<string>('')
-  const [password, setPassword] = useState<string>('')
+  const [username, setUserName] = useState<string>('happy@gmail.com')
+  const [password, setPassword] = useState<string>('1234')
+
+  const navigateHome = () => {
+    if (isEmpty(username) || isEmpty(password)) {
+      Alert.alert('Invalid Credentials','Please enter username and password properly')
+    } else if (isNotValidEmail(username)) {
+      Alert.alert('Invalid Email','Please enter valid email')
+    } else {
+      const mmkvUsername = storage.getString('email');
+      const mmkvPassword = storage.getString('password');
+      const mmkvFullName =  storage.getString('fullName');
+      if ((mmkvUsername === username) && (mmkvPassword === password)) {
+        navigation.navigate('Home', { name: mmkvFullName }) 
+      } else {
+        Alert.alert('No Account Found', 'Please SignUp to get going')
+      }
+    }
+  }
 
   return (
     <View style={styles.container}>
@@ -38,7 +58,7 @@ const Login = ({ navigation }) => {
 
       <TouchableOpacity
         style={styles.loginButton}
-        onPress={() => navigation.navigate('Home')}
+        onPress={navigateHome}
       >
         <Text style={styles.loginText}>{Strings.login}</Text>
       </TouchableOpacity>

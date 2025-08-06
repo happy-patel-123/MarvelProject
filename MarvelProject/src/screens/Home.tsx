@@ -2,10 +2,13 @@ import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import * as Colors from "../resources/values/Colors"
 
-const Home = () => {
+const Home = ({ route }) => {
+
+  const { name } = route.params
+
   return (
     <View style={styles.container}>
-      <Text>Welcome, Happy Patel</Text>
+      <Text>Welcome,{' '}{name}</Text>
     </View>
   )
 }
