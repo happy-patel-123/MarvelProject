@@ -1,7 +1,7 @@
 import { Image, StyleSheet, Text, View } from 'react-native'
 import React, { useEffect } from 'react'
-import * as Colors from "../resources/values/Colors"
-import { localAssets } from '../resources/assets/Assets'
+import * as Colors from "../../resources/values/Colors"
+import { localAssets } from '../../resources/assets/Assets'
 
 const Splash = ({ navigation }) => {
 
