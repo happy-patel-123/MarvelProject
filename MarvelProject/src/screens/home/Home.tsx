@@ -1,4 +1,4 @@
-import { Text, View } from 'react-native'
+import { Image, Text, View } from 'react-native'
 import React from 'react'
 import { homeStyles as styles } from './home.style'
 
@@ -8,8 +8,15 @@ const Home = ({ route }) => {
 
   return (
     <View style={styles.container}>
-      <Text>Welcome,{' '}{name}</Text>
+      <Text style={styles.welcomeText}>
+        Welcome,{' '}<Text style={styles.nameText}>{name}</Text>
+      </Text>
+      <Image
+        source={require('../../resources/assets/testImages/ProfileImage.png')}
+        style={styles.img}
+      />
     </View>
+
   )
 }
 
