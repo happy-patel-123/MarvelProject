@@ -1,0 +1,29 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/resources/fonts/AlibabaSans-Black.ttf",
+      "sha1": "9b1a937b0a3541d6e7658dd8ca3bfe2526d214fb"
+    },
+    {
+      "path": "src/resources/fonts/AlibabaSans-Bold.ttf",
+      "sha1": "0cbafa4eddb0a70597f4a13e88d66c7b4dc717c6"
+    },
+    {
+      "path": "src/resources/fonts/AlibabaSans-Light.ttf",
+      "sha1": "dfc8ab35fa48bc684a1490884ed6df2ed0f734ce"
+    },
+    {
+      "path": "src/resources/fonts/AlibabaSans-Medium.ttf",
+      "sha1": "ab07b6be75207d9bd40efe85179c58148b0ec848"
+    },
+    {
+      "path": "src/resources/fonts/AlibabaSans-Regular.ttf",
+      "sha1": "bc224dcd19d317820cd0621f43579fc2c19303f4"
+    },
+    {
+      "path": "src/resources/fonts/Fonts.ts",
+      "sha1": "b9cbbf87c70de0c916fdbaa65f56cc0bde6b0b6d"
+    }
+  ]
+}

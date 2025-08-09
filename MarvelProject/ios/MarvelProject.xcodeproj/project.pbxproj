@@ -11,6 +11,12 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		BA95753616C742F79A77720C /* AlibabaSans-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1367A03966C34616A9DBBB6E /* AlibabaSans-Black.ttf */; };
+		C89257A6982C4065905C8CE7 /* AlibabaSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8CCA774EE5C0408982FD71B1 /* AlibabaSans-Bold.ttf */; };
+		37D01E17B79C4CE085B655AC /* AlibabaSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FCCAE2DA90B42619596D391 /* AlibabaSans-Light.ttf */; };
+		4B56EED2DC8F4D9CA62191DE /* AlibabaSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0FE2C696F203442380045C30 /* AlibabaSans-Medium.ttf */; };
+		C386DE9209764179ABB6AE47 /* AlibabaSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E0528F3BAA7E42D4975386E5 /* AlibabaSans-Regular.ttf */; };
+		AC33A24BEA864F0CB0BE8594 /* Fonts.ts in Resources */ = {isa = PBXBuildFile; fileRef = 892A44EF95EC4965BF2D08AC /* Fonts.ts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +41,12 @@
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = MarvelProject/AppDelegate.swift; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = MarvelProject/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		1367A03966C34616A9DBBB6E /* AlibabaSans-Black.ttf */ = {isa = PBXFileReference; name = "AlibabaSans-Black.ttf"; path = "../src/resources/fonts/AlibabaSans-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8CCA774EE5C0408982FD71B1 /* AlibabaSans-Bold.ttf */ = {isa = PBXFileReference; name = "AlibabaSans-Bold.ttf"; path = "../src/resources/fonts/AlibabaSans-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1FCCAE2DA90B42619596D391 /* AlibabaSans-Light.ttf */ = {isa = PBXFileReference; name = "AlibabaSans-Light.ttf"; path = "../src/resources/fonts/AlibabaSans-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0FE2C696F203442380045C30 /* AlibabaSans-Medium.ttf */ = {isa = PBXFileReference; name = "AlibabaSans-Medium.ttf"; path = "../src/resources/fonts/AlibabaSans-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E0528F3BAA7E42D4975386E5 /* AlibabaSans-Regular.ttf */ = {isa = PBXFileReference; name = "AlibabaSans-Regular.ttf"; path = "../src/resources/fonts/AlibabaSans-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		892A44EF95EC4965BF2D08AC /* Fonts.ts */ = {isa = PBXFileReference; name = "Fonts.ts"; path = "../src/resources/fonts/Fonts.ts"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +105,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				3D1FC9ADFE164F9C896997B8 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -115,6 +128,20 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		3D1FC9ADFE164F9C896997B8 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				1367A03966C34616A9DBBB6E /* AlibabaSans-Black.ttf */,
+				8CCA774EE5C0408982FD71B1 /* AlibabaSans-Bold.ttf */,
+				1FCCAE2DA90B42619596D391 /* AlibabaSans-Light.ttf */,
+				0FE2C696F203442380045C30 /* AlibabaSans-Medium.ttf */,
+				E0528F3BAA7E42D4975386E5 /* AlibabaSans-Regular.ttf */,
+				892A44EF95EC4965BF2D08AC /* Fonts.ts */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -185,6 +212,12 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				BA95753616C742F79A77720C /* AlibabaSans-Black.ttf in Resources */,
+				C89257A6982C4065905C8CE7 /* AlibabaSans-Bold.ttf in Resources */,
+				37D01E17B79C4CE085B655AC /* AlibabaSans-Light.ttf in Resources */,
+				4B56EED2DC8F4D9CA62191DE /* AlibabaSans-Medium.ttf in Resources */,
+				C386DE9209764179ABB6AE47 /* AlibabaSans-Regular.ttf in Resources */,
+				AC33A24BEA864F0CB0BE8594 /* Fonts.ts in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

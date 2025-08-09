@@ -14,7 +14,7 @@ const homeStyles = StyleSheet.create({
     welcomeText: {
         fontSize: Responsive.size18,
         // fontWeight: 600,
-        fontFamily: Fonts.bold,
+        fontFamily: Fonts.medium,
         color: Colors.black,
     },
     nameText: {
